@@ -36,13 +36,13 @@ export default function ScheduleViewer() {
 
   // 獲取日期物件（用於行事曆）
   const getDateObject = (dayNumber) => {
-    const startDate = new Date(2025, 2, 3);
+    const startDate = new Date(2025, 2, 4);
     let date = new Date(startDate);
     let currentDay = 1;
 
     while (currentDay < dayNumber) {
       date.setDate(date.getDate() + 1);
-      if (date.getDay() !== 0 && date.getDay() !== 6) {
+      if (date.getDay() !== 1 && date.getDay() !== 0) {
         currentDay++;
       }
     }
