@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-stripe {
+    background-color: #1e3a8a; /* 深藍 */
+    background-image: repeating-linear-gradient(
+      45deg,
+      #facc15 0px,        /* 黃色條 */
+      #facc15 550px,
+      #ffffff 550px,       /* 白色條 */
+      #ffffff 1100px,
+      #1e3a8a 1100px,       /* 藍色隔板（可選） */
+      #1e3a8a 1650px
+    );
+  }
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
