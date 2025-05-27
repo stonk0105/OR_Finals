@@ -100,7 +100,7 @@ export default function ScheduleViewer() {
     let filtered = schedule;
     
     if (selectedDay !== "全部") {
-      filtered = filtered.filter((row) => row.Day === selectedDay);
+      filtered = filtered.filter((row) => String(row.Day) === String(selectedDay));
     }
     
     if (selectedTeam !== "全部") {
