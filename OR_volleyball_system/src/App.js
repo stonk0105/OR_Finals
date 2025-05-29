@@ -75,7 +75,7 @@ function Home() {
         <h1 className="text-3xl font-extrabold text-blue-900 text-center mb-6">🏐 台大盃排球賽程生成器</h1>
 
         <div className="mb-4">
-          <label className="block text-blue-900 font-extrabold mb-2">📂 上傳 Excel 檔案：</label>
+          <label className="block text-blue-900 font-extrabold mb-2">📂 上傳評審系所及隊伍分級表：</label>
           <input
             type="file"
             accept=".xlsx"
